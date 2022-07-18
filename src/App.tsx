@@ -12,6 +12,7 @@ const App = () => {
     (async() => {
       const result = await axios.get("/posts")
       setPosts(result.data.posts)
+    console.log(result.data)
     })()
   },[])
 
@@ -22,6 +23,7 @@ const App = () => {
     data.append("description", description)
     const result = await axios.post("/posts", data)
     setPosts([result.data, ...posts])
+    window.location.reload()
   }
 
   return (
