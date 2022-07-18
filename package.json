@@ -47,5 +47,5 @@
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.6"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "https://mysql-s3.herokuapp.com"
 }
