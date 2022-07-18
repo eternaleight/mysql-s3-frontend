@@ -45,7 +45,7 @@ const App = () => {
       <main>
         {posts?.map((post: any) => (
           <figure key={post.id}>
-            <img src={post.image_url}/>
+            <img className='w-[70%] mx-auto max-w-[500px]' src={post.image_url}/>
             <figcaption>{post.image_url}</figcaption>
             <figcaption>{post.description}</figcaption>
           </figure>
