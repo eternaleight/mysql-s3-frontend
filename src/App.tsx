@@ -41,7 +41,7 @@ const App = () => {
         <button type="submit" className='text-white bg-black px-1 py-[2px] rounded-[2px]'>Submit</button>
       </form>
       <main>
-        {posts.map((post: any) => (
+        {posts?.map((post: any) => (
           <figure key={post.id}>
             <img src={post.image_url}/>
             <figcaption>{post.image_url}</figcaption>
