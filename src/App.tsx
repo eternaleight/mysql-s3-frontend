@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import logo from "./logo.svg"
 import "./App.css"
 import axios from "axios"
 
@@ -29,7 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1 className="mb-8 text-white bg-gray-700">Mysql-s3</h1>
+        <h1 className="mb-8 text-white bg-gray-700">mysql-s3</h1>
       </header>
       <form onSubmit={submit}>
         <input
