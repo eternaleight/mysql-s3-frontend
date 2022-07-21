@@ -2,16 +2,22 @@ import React, { useEffect, useState } from "react"
 import "./App.css"
 import axios from "axios"
 
+type Posts = {
+  description: string
+  id: number
+  image_url: string
+  timestamp: string
+}[]
+
 const App = () => {
   const [file, setFile] = useState<string>("")
   const [description, setDescription] = useState<string>("")
-  const [posts, setPosts] = useState<any>([])
+  const [posts, setPosts] = useState<Posts>([])
 
   useEffect(() => {
     (async() => {
       const result = await axios.get("/posts")
       setPosts(result.data.posts)
-    console.log(result.data)
     })()
   },[])
 
