@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h1 className="mb-8 text-white bg-gray-700">App 3000</h1>
+        <h1 className="mb-8 text-white bg-gray-700">Mysql-s3</h1>
       </header>
       <form onSubmit={submit}>
         <input
